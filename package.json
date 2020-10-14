@@ -1,0 +1,29 @@
+{
+    "name": "wpak",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpak-dev-server --mode=development",
+        "prod": "webpak --mode=production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zeoniss/wpak.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zeoniss/wpak/issues"
+    },
+    "homepage": "https://github.com/zeoniss/wpak#readme",
+    "devDependencies": {
+        "css-loader": "^5.0.0",
+        "webpack": "^5.0.0",
+        "webpack-cli": "^4.0.0"
+    },
+    "dependencies": {
+        "webpack-dev-server": "^3.11.0"
+    }
+}
