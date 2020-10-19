@@ -1,33 +1,28 @@
 {
-    "name": "wpak",
+    "name": "js-22",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "webpaсk-dev-server --mode=development",
-        "prod": "webpaсk --mode=production"
+        "dev": "parcel src/*.html",
+        "build": "parcel build src/*.html"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/zeoniss/wpak.git"
+        "url": "git+https://github.com/luxplanjay/js-22.git"
     },
     "keywords": [],
-    "author": "",
+    "author": "Alexander Repeta <alexander.repeta@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/zeoniss/wpak/issues"
+        "url": "https://github.com/luxplanjay/js-22/issues"
     },
-    "homepage": "https://github.com/zeoniss/wpak#readme",
+    "homepage": "https://github.com/luxplanjay/js-22#readme",
     "devDependencies": {
-        "@babel/core": "^7.11.6",
-        "@babel/preset-env": "^7.11.5",
-        "babel-loader": "^8.1.0",
-        "css-loader": "^4.3.0",
-        "html-webpack-plugin": "^4.5.0",
-        "style-loader": "^1.2.1",
-        "webpack": "^4.44.2",
-        "webpack-cli": "^3.3.12",
-        "webpack-dev-server": "^3.11.0"
+        "parcel-bundler": "^1.12.4",
+        "parcel-plugin-handlebars-precompile": "^1.0.2"
     },
-    "dependencies": {}
+    "dependencies": {
+        "lodash.throttle": "^4.1.1"
+    }
 }
