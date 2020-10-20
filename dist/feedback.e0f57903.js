@@ -697,10 +697,10 @@ refs.form.addEventListener("input", function (e) {
   // console.log(e.target.name);
   // console.log(e.target.value);
   formData[e.target.name] = e.target.value;
-  localStorage.setItem("name", JSON.stringify(formData));
-  var savedSettings = localStorage.getItem("name");
-  var formData = JSON.parse(savedSettings);
-  console.log(formData);
+  localStorage.setItem(STORAGE__KEY, JSON.stringify(formData));
+  var saveName = localStorage.getItem(STORAGE__KEY);
+  var dog = JSON.parse(saveName);
+  console.log(dog);
 });
 },{"lodash.throttle":"../node_modules/lodash.throttle/index.js","../css/common.css":"css/common.css","../css/feedback-form.css":"css/feedback-form.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

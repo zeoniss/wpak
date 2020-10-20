@@ -56,8 +56,8 @@ refs.form.addEventListener("input", e => {
   // console.log(e.target.value);
 
   formData[e.target.name] = e.target.value;
-  localStorage.setItem("name", JSON.stringify(formData));
-  const savedSettings = localStorage.getItem("name");
-  const formData = JSON.parse(savedSettings);
-  console.log(formData);
+  localStorage.setItem(STORAGE__KEY, JSON.stringify(formData));
+  const saveName = localStorage.getItem(STORAGE__KEY);
+  const dog = JSON.parse(saveName);
+  console.log(dog);
 });
